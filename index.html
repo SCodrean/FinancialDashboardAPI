@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <h1>STOCK DISPLAY</h1>
+
+  <!-- Dropdown menu for user action selection -->
+  <label for="action">Select an action:</label>
+  <select id="action" name="action">
+    <option value="search">Search For Similar Tickers</option>
+    <option value="price">Check Price</option>
+    <option value="news">Get News</option>
+    <option value="options">Show Options</option>
+    <option value="data">Return Historic Data</option>
+    <option value="balance">Display Balance Sheet</option>
+    <option value="earnings">Check Earnings</option>
+    <option value="esg">Get ESG</option>
+    <option value="analytics">Display Finance Analyticals</option>
+    <option value="trends">Show Trends</option>
+    <option value="key">Provide Key Statistics</option>
+    <option value="quotes">Return Multiple Quotes</option>
+  </select>
+
+  <br><br>
+
+  <form id="user-input-form">
+    <label for="user-input">Company Ticker:</label>
+    <input type="text" id="user-input" name="user-input" placeholder="Write Here!">
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+
+  <!-- Display area for the fetched data -->
+  <div id="data-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
